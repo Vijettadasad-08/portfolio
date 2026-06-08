@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vijet Tadasad — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="pre-inner">
+      <div class="pre-text" id="preText">LOADING<span class="blink">_</span></div>
+      <div class="pre-bar"><div class="pre-fill" id="preFill"></div></div>
+      <div class="pre-count" id="preCount">0%</div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#home" class="nav-brand">VT<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#home"><span class="nav-num">01</span>Home</a></li>
+      <li><a href="#about"><span class="nav-num">02</span>About</a></li>
+      <li><a href="#skills"><span class="nav-num">03</span>Skills</a></li>
+      <li><a href="#projects"><span class="nav-num">04</span>Projects</a></li>
+      <li><a href="#contact"><span class="nav-num">05</span>Contact</a></li>
+    </ul>
+    <button class="burger" id="burger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mob-menu" id="mobMenu">
+    <ul>
+      <li><a href="#home" class="mob-lnk">Home</a></li>
+      <li><a href="#about" class="mob-lnk">About</a></li>
+      <li><a href="#skills" class="mob-lnk">Skills</a></li>
+      <li><a href="#projects" class="mob-lnk">Projects</a></li>
+      <li><a href="#contact" class="mob-lnk">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HOME ===== -->
+  <section id="home">
+    <canvas id="gridCanvas"></canvas>
+    <div class="home-content">
+      <div class="home-left">
+        <div class="tag-line">
+          <span class="tag-bracket">[</span>
+          <span class="tag-text" id="tagText"></span>
+          <span class="tag-bracket">]</span>
+        </div>
+        <h1 class="hero-name">
+          <span class="hero-first">Vijet</span>
+          <span class="hero-last">Tadasad</span>
+        </h1>
+        <p class="hero-role">
+          <span class="role-prefix">~/</span>
+          MCA Student &nbsp;&amp;&nbsp; Developer
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-main">
+            View Projects
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn-sec">Contact Me</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span>7+</span><small>Projects</small></div>
+          <div class="stat-div"></div>
+          <div class="stat"><span>MCA</span><small>Degree</small></div>
+          <div class="stat-div"></div>
+          <div class="stat"><span>AI</span><small>Focus</small></div>
+        </div>
+      </div>
+      <div class="home-right">
+        <div class="photo-terminal">
+          <div class="terminal-bar">
+            <span class="t-dot t-red"></span>
+            <span class="t-dot t-yellow"></span>
+            <span class="t-dot t-green"></span>
+            <span class="t-title">profile.exe</span>
+          </div>
+          <div class="terminal-body">
+            <div class="photo-wrap">
+              <img src="photo.jpg" alt="Vijet Tadasad" onerror="this.style.display='none';document.getElementById('photoFallback').style.display='flex'"/>
+              <div class="photo-fallback" id="photoFallback">
+                <svg viewBox="0 0 100 120" fill="none"><circle cx="50" cy="44" r="26" fill="#00ff88" opacity="0.15"/><ellipse cx="50" cy="105" rx="40" ry="26" fill="#00ff88" opacity="0.1"/></svg>
+                <span>photo.jpg</span>
+              </div>
+            </div>
+            <div class="terminal-output">
+              <p><span class="t-green-text">$</span> whoami</p>
+              <p class="t-out">Vijet Tadasad</p>
+              <p><span class="t-green-text">$</span> cat role.txt</p>
+              <p class="t-out">MCA Student + Developer</p>
+              <p><span class="t-green-text">$</span> status</p>
+              <p class="t-out t-blink">Available for opportunities<span class="cursor-blink">▊</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-down">
+      <span>SCROLL</span>
+      <div class="scroll-arr">↓</div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="sec-inner">
+      <div class="sec-label reveal">// 02 — about</div>
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <h2 class="sec-heading">Who<br/>Am <span class="hl">I?</span></h2>
+          <div class="about-code-block">
+            <div class="cb-header">
+              <span class="cb-dot"></span>
+              <span>about.json</span>
+            </div>
+            <pre class="cb-body">{
+  <span class="ck">"name"</span>: <span class="cv">"Vijet Tadasad"</span>,
+  <span class="ck">"degree"</span>: <span class="cv">"MCA"</span>,
+  <span class="ck">"role"</span>: <span class="cv">"Developer"</span>,
+  <span class="ck">"location"</span>: <span class="cv">"India"</span>,
+  <span class="ck">"status"</span>: <span class="cv">"Open to Work"</span>
+}</pre>
+          </div>
+        </div>
+        <div class="about-right reveal">
+          <p class="about-para">I'm <strong>Vijet Tadasad</strong>, a postgraduate student pursuing a <strong>Master of Computer Applications (MCA)</strong>. I'm passionate about building scalable web applications, exploring data structures, and applying software engineering principles to solve real-world problems.</p>
+          <p class="about-para">I enjoy working across the full technology stack — from designing clean user interfaces to building efficient server-side logic and managing databases. I'm constantly learning and staying up to date with modern technologies.</p>
+          <p class="about-para">When I'm not coding, I'm exploring new frameworks, contributing to academic projects, and building my technical portfolio one project at a time.</p>
+          <div class="about-tags">
+            <span>MCA Student</span>
+            <span>Full Stack Dev</span>
+            <span>Problem Solver</span>
+            <span>Open to Roles</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="sec-inner">
+      <div class="sec-label reveal">// 03 — skills</div>
+      <h2 class="sec-heading reveal">Tech <span class="hl">Stack</span></h2>
+      <div class="skills-grid">
+
+        <div class="sk-card reveal" style="--d:0ms">
+          <div class="sk-top">
+            <span class="sk-num">01</span>
+            <h3>Frontend</h3>
+          </div>
+          <ul>
+            <li><span class="sk-arrow">▸</span> HTML5 &amp; CSS3</li>
+            <li><span class="sk-arrow">▸</span> JavaScript (ES6+)</li>
+            <li><span class="sk-arrow">▸</span> Responsive Design</li>
+            <li><span class="sk-arrow">▸</span> Bootstrap</li>
+          </ul>
+        </div>
+
+        <div class="sk-card reveal" style="--d:100ms">
+          <div class="sk-top">
+            <span class="sk-num">02</span>
+            <h3>Backend</h3>
+          </div>
+          <ul>
+            <li><span class="sk-arrow">▸</span> Python</li>
+            <li><span class="sk-arrow">▸</span> Java</li>
+            <li><span class="sk-arrow">▸</span> Node.js</li>
+            <li><span class="sk-arrow">▸</span> REST APIs</li>
+          </ul>
+        </div>
+
+        <div class="sk-card reveal" style="--d:200ms">
+          <div class="sk-top">
+            <span class="sk-num">03</span>
+            <h3>Database</h3>
+          </div>
+          <ul>
+            <li><span class="sk-arrow">▸</span> MySQL</li>
+            <li><span class="sk-arrow">▸</span> MongoDB</li>
+            <li><span class="sk-arrow">▸</span> SQL Queries</li>
+            <li><span class="sk-arrow">▸</span> Data Modelling</li>
+          </ul>
+        </div>
+
+        <div class="sk-card reveal" style="--d:300ms">
+          <div class="sk-top">
+            <span class="sk-num">04</span>
+            <h3>CS Fundamentals</h3>
+          </div>
+          <ul>
+            <li><span class="sk-arrow">▸</span> Data Structures</li>
+            <li><span class="sk-arrow">▸</span> Algorithms</li>
+            <li><span class="sk-arrow">▸</span> OOP Concepts</li>
+            <li><span class="sk-arrow">▸</span> OS &amp; Networks</li>
+          </ul>
+        </div>
+
+        <div class="sk-card reveal" style="--d:400ms">
+          <div class="sk-top">
+            <span class="sk-num">05</span>
+            <h3>Tools &amp; Others</h3>
+          </div>
+          <ul>
+            <li><span class="sk-arrow">▸</span> Git &amp; GitHub</li>
+            <li><span class="sk-arrow">▸</span> VS Code</li>
+            <li><span class="sk-arrow">▸</span> Linux CLI</li>
+            <li><span class="sk-arrow">▸</span> Agile / Scrum</li>
+          </ul>
+        </div>
+
+        <div class="sk-card sk-card--wide reveal" style="--d:500ms">
+          <div class="sk-top">
+            <span class="sk-num">06</span>
+            <h3>Software Engineering</h3>
+          </div>
+          <div class="sk-wide-row">
+            <div class="sk-pill"><span>SDLC</span></div>
+            <div class="sk-pill"><span>Software Architecture</span></div>
+            <div class="sk-pill"><span>System Design</span></div>
+            <div class="sk-pill"><span>Unit Testing</span></div>
+            <div class="sk-pill"><span>Version Control</span></div>
+            <div class="sk-pill"><span>Documentation</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="sec-inner">
+      <div class="sec-label reveal">// 04 — projects</div>
+      <h2 class="sec-heading reveal">My <span class="hl">Work</span></h2>
+      <div class="proj-grid">
+
+        <div class="proj-card reveal">
+          <div class="proj-top">
+            <div class="proj-num">01</div>
+            <div class="proj-links-top">
+              <a href="https://github.com/Vijettadasad-08/project" target="_blank" class="icon-link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>My Project</h3>
+          <p>A web development project built as part of academic coursework. Add your project description here — what it does, what problem it solves, and the technologies used.</p>
+          <div class="proj-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <a href="https://github.com/Vijettadasad-08/project" target="_blank" class="proj-cta">View Project ↗</a>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-top">
+            <div class="proj-num">02</div>
+            <div class="proj-links-top">
+              <a href="#" class="icon-link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Project Two <span class="coming">Coming Soon</span></h3>
+          <p>A placeholder for an upcoming project. Replace with your project title, description, GitHub link, and live demo once it's ready to showcase.</p>
+          <div class="proj-tags">
+            <span>Python</span><span>MySQL</span><span>Flask</span>
+          </div>
+          <a href="#" class="proj-cta">Coming Soon ↗</a>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-top">
+            <div class="proj-num">03</div>
+            <div class="proj-links-top">
+              <a href="#" class="icon-link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Project Three <span class="coming">Coming Soon</span></h3>
+          <p>Another upcoming project placeholder. Add your project description, the technologies used, and links to GitHub and the live demo when ready.</p>
+          <div class="proj-tags">
+            <span>React</span><span>Node.js</span><span>MongoDB</span>
+          </div>
+          <a href="#" class="proj-cta">Coming Soon ↗</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="sec-inner">
+      <div class="sec-label reveal">// 05 — contact</div>
+      <h2 class="sec-heading reveal">Get In <span class="hl">Touch</span></h2>
+      <div class="contact-wrap">
+        <div class="contact-left reveal">
+          <p class="contact-intro">Have a project in mind, want to collaborate, or just want to say hello? Feel free to reach out!</p>
+          <div class="clink-list">
+            <a href="mailto:vijettadasad@gmail.com" class="clink">
+              <div class="clink-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span>Email</span>
+                <small>vijettadasad@gmail.com</small>
+              </div>
+            </a>
+            <a href="tel:+919019796575" class="clink">
+              <div class="clink-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.42 13a19.79 19.79 0 01-3.07-8.67A2 2 0 012.33 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <span>Phone</span>
+                <small>+91 9019796575</small>
+              </div>
+            </a>
+            <a href="https://github.com/Vijettadasad-08" target="_blank" class="clink">
+              <div class="clink-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </div>
+              <div>
+                <span>GitHub</span>
+                <small>github.com/Vijettadasad-08</small>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/vijet-tadasad-382401252" target="_blank" class="clink">
+              <div class="clink-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div>
+                <span>LinkedIn</span>
+                <small>vijet-tadasad</small>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right reveal">
+          <form id="contactForm" class="cf" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="cf-field">
+              <label>Name</label>
+              <input type="text" name="name" placeholder="Your name" required/>
+            </div>
+            <div class="cf-field">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="your@email.com" required/>
+            </div>
+            <div class="cf-field">
+              <label>Message</label>
+              <textarea name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+            </div>
+            <button type="submit" class="cf-btn">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <p class="cf-msg" id="cfMsg"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="ft-inner">
+      <span class="ft-logo">VT<span class="dot">.</span></span>
+      <p>© 2025 Vijet Tadasad — Built with HTML, CSS &amp; JS</p>
+      <a href="#home" class="ft-top">↑ TOP</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
